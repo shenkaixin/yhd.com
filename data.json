@@ -1,0 +1,25 @@
+[{
+        "src": "./images/banner1.jpg",
+        "title":"伊利"
+    },
+    {
+        "src": "./images/banner2.jpg",
+        "title":"国产食品"
+    },
+    {
+        "src": "./images/banner3.jpg",
+        "title":"进口食品"
+    },
+    {
+        "src": "./images/banner4.jpg",
+        "title":"个人洗护"
+    },
+    {
+        "src": "./images/banner5.jpg",
+        "title":"家电3C"
+    },
+    {
+        "src": "./images/banner6.jpg",
+        "title":"图文娱乐"
+    }
+]
