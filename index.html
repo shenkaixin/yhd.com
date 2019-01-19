@@ -12,11 +12,25 @@
       <link rel="stylesheet" href="./css/iconfont.css">
       <link rel="stylesheet" href="./css/reset.css">
       <link rel="stylesheet" href="./css/index.css">
+      <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 
 <body>
       <!--头部-->
-      <header class="header">
+      <header>
+            <div class="hd_search_fixed">
+                  <div class="hd_fixed_wrap">
+                        <a href="#">
+                              <img src="./images/fixed.logo.jpg" alt="">
+                        </a>
+                        <div class="hd_search_wrap">
+                              <input type="text" placeholder="usb分线器">
+                              <button>
+                                    <i class="iconfont icon-sousuo"></i>
+                              </button>
+                        </div>
+                  </div>
+            </div>
             <div class="head_top">
                   <div class="contaniner-md">
                         <a href="./index.html">
@@ -34,274 +48,284 @@
                   </div>
             </div>
             <div class="head_center">
-                  <div class="head_nav contaniner-md">
-                        <div class="head_logo">
-                              <a class='logo1' href="./index.html"><img src="./images/logo1.png" alt=""></a>
-                              <a class='logo2' href="./index.html"><img src="./images/logo2.jpg" alt=""></a>
-                        </div>
-                        <div class="head_right">
-                              <div class='head_ss'>
-                                    <input type="text" placeholder="usb分线器">
-                                    <i class="iconfont icon-sousuo"></i>
+                  <div class="header_bp">
+                        <div class="head_nav">
+                              <div class="head_logo">
+                                    <a class='logo1' href="./index.html"><img src="./images/logo1.png" alt=""></a>
+                                    <a class='logo2' href="./index.html"><img src="./images/logo2.jpg" alt=""></a>
                               </div>
-                              <ul>
-                                    <li>冰柜单温</li>
-                                    <li>7a荣耀</li>
-                                    <li>豆油</li>
-                                    <li>皂液</li>
-                                    <li>疏通剂</li>
-                                    <li>亮碟</li>
-                                    <li>油污净</li>
-                              </ul>
-                              <a href="#"> <i class="iconfont icon-gouwuchekong"></i> 购物车</a>
-                        </div>
-                        <div class="head_navs">
-                              <div class="head_navs_left">
-                                    <i class="iconfont icon-liebiao"></i>
-                                    全部类目
-                                    <i class="iconfont icon-jiantouxia"></i>
-                                    <div class="head_navs_left_list">
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
-                                                      </div>
-                                                </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
-                                                      </div>
-                                                </div>
+                              <div class="head_right">
+                                    <div class='head_ss'>
+                                          <input type="text" placeholder="usb分线器">
+                                          <i class="iconfont icon-sousuo"></i>
+                                    </div>
+                                    <ul>
+                                          <li>冰柜单温</li>
+                                          <li>7a荣耀</li>
+                                          <li>豆油</li>
+                                          <li>皂液</li>
+                                          <li>疏通剂</li>
+                                          <li>亮碟</li>
+                                          <li>油污净</li>
+                                    </ul>
+                                    <a href="#"> <i class="iconfont icon-gouwuchekong"></i> 购物车</a>
+                              </div>
+                              <div class="head_navs">
+                                    <div class="head_nav_left">
+                                          <div class="head_navs_left">
+                                                <i class="iconfont icon-liebiao"></i>
+                                                全部类目
+                                                <i class="iconfont icon-jiantouxia"></i>
                                           </div>
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                          <div class="head_navs_left_list">
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
+                                                      </div>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
+                                                      </div>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
-                                          </div>
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
+                                                      </div>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
+                                                      </div>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
-                                          </div>
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
+                                                      </div>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                <div class="column_item">
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
-                                                </div>
-                                          </div>
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
-                                                      </div>
-                                                </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="column-item">
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
-                                                      </div>
-                                                </div>
-                                                <div class="category-item">
-                                                      <div class="inner">
-                                                            <p>全球进口</p>
-                                                            <ul>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                                  <li>asdasd</li>
-                                                                  <li>asdas</li>
-                                                                  <li>sad</li>
-                                                                  <li>asdas</li>
-                                                            </ul>
+                                                      <div class="category_item">
+                                                            <div class="inner">
+                                                                  <p>全球进口</p>
+                                                                  <ul>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                        <li>asdasd</li>
+                                                                        <li>asdas</li>
+                                                                        <li>sad</li>
+                                                                        <li>asdas</li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
                                                 </div>
                                           </div>
                                     </div>
+                                    <ul class="head_nav_right">
+                                          <li><a href="#">领金币</a></li>
+                                          <li><a href="#">领券中心</a></li>
+                                          <li><a href="#">充值</a></li>
+                                          <li><a href="#">超级单品</a></li>
+                                          <li><a href="#">超级品牌</a></li>
+                                          <li><a href="#">超级品类</a></li>
+                                    </ul>
                               </div>
-                              <a href="#">领金币</a>
-                              <a href="#">领券中心</a>
-                              <a href="#">充值</a>
-                              <a href="#">超级单品</a>
-                              <a href="#">超级品牌</a>
-                              <a href="#">超级品类</a>
                         </div>
                   </div>
             </div>
             <div class="head_banner">
-                  <ul class="banner_box">
-                  </ul>
-                  <ul class="tip_box contaniner-md">
-                  </ul>
+                  <div class="lunbo_img">
+                        <ul class="lunbo_ul">
+                        </ul>
+                  </div>
+                  <div class="lb_tab">
+                        <ul class="lb_tab_ul">
+                        </ul>
+                  </div>
             </div>
       </header>
 
       <!--主体-->
-      <main class="contaniner-md">
+      <main>
             <!-- 新人领券 -->
             <div class="coupon"><a href="http://www.baidu.com"> <img src="./images/xinrenyouli.png" alt=""> </a> </div>
             <!-- 超级单品 -->
-            <div class="single_con">
+            <div class="single_con ">
                   <div class="super_item">
                         <ul>
                               <li class="single_one">
@@ -316,11 +340,11 @@
                                                 距结束仅剩
                                           </div>
                                           <div class="djs_time">
-                                                <span></span>
+                                                <span>00</span>
                                                 <i>:</i>
-                                                <span></span>
+                                                <span>00</span>
                                                 <i>:</i>
-                                                <span></span>
+                                                <span>00</span>
                                           </div>
                                     </div>
                               </li>
@@ -516,6 +540,7 @@
                         </ul>
                   </div>
                   <div class="happy_summer">
+                        <img class="happy_ggw" src="./images/szss.png" alt="">
                         <div class="happy_bott">
                               <p>下载APP</p>
                               <img src="./images/ewm.jpg" alt="">
@@ -527,9 +552,198 @@
                         </a>
                   </div>
             </div>
+            <!-- 超级品牌 -->
+            <div class="brand_class_floor">
+                  <!-- 超级品牌 -->
+                  <div class="super_brand">
+                        <div class="brand_title">
+                              <span class="brand_tittle_common_firstc">超级品牌</span>
+                              <span class="brand_tittle_common_lastc">/ 超级品牌/精品汇聚</span>
+                        </div>
+                        <div class="brand_m_common">
+                              <img class="brand_bg_img" src="./images/fulinmen.jpg" alt="">
+                              <div class="brand_bg_img_mc"></div>
+                              <div class="logo">
+                                    <img src="./images/fulinmenlogo.jpg" alt="">
+                                    <div class="logo_hover"></div>
+                              </div>
+                              <div class="brand_pinpai">
+                                    <div class="brand_pb_t">福临门</div>
+                                    <div class="brand_pb_two">低至5折</div>
+                                    <div class="brand_jr">
+                                          进入
+                                          <i class="iconfont"></i>
+                                    </div>
+                              </div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg1.jpg" alt=""></div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg2.jpg" alt=""></div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg3.jpg" alt=""></div>
+                        </div>
+                        <div class="brand_m_common_bot">
+                              <div class="brand_m_common">
+                                    <img class="brand_bg_img" src="./images/fulinmen.jpg" alt="">
+                                    <div class="brand_bg_img_mc"></div>
+                                    <div class="logo">
+                                          <img src="./images/fulinmenlogo.jpg" alt="">
+                                          <div class="logo_hover"></div>
+                                    </div>
+                                    <div class="brand_pinpai">
+                                          <div class="brand_pb_t">福临门</div>
+                                          <div class="brand_pb_two">低至5折</div>
+                                          <div class="brand_jr">
+                                                进入
+                                                <i class="iconfont"></i>
+                                          </div>
+                                    </div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg1.jpg" alt=""></div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg2.jpg" alt=""></div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg3.jpg" alt=""></div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- 超级品类 -->
+                  <div class="super_brand right">
+                        <div class="brand_title">
+                              <span class="brand_tittle_common_firstc">超级品类</span>
+                              <span class="brand_tittle_common_lastc">/ 超级品类/品质甄选</span>
+                        </div>
+                        <div class="brand_m_common">
+                              <img class="brand_bg_img" src="./images/fulinmen.jpg" alt="">
+                              <div class="brand_bg_img_mc"></div>
+                              <div class="logo">
+                                    <img src="./images/fulinmenlogo.jpg" alt="">
+                                    <div class="logo_hover"></div>
+                              </div>
+                              <div class="brand_pinpai">
+                                    <div class="brand_pb_t">福临门</div>
+                                    <div class="brand_pb_two">低至5折</div>
+                                    <div class="brand_jr">
+                                          进入
+                                          <i class="iconfont"></i>
+                                    </div>
+                              </div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg1.jpg" alt=""></div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg2.jpg" alt=""></div>
+                              <div class="brand_sp_bg"><img src="./images/ppbg3.jpg" alt=""></div>
+                        </div>
+                        <div class="brand_m_common_bot">
+                              <div class="brand_m_common">
+                                    <img class="brand_bg_img" src="./images/fulinmen.jpg" alt="">
+                                    <div class="brand_bg_img_mc"></div>
+                                    <div class="logo">
+                                          <img src="./images/fulinmenlogo.jpg" alt="">
+                                          <div class="logo_hover"></div>
+                                    </div>
+                                    <div class="brand_pinpai">
+                                          <div class="brand_pb_t">福临门</div>
+                                          <div class="brand_pb_two">低至5折</div>
+                                          <div class="brand_jr">
+                                                进入
+                                                <i class="iconfont"></i>
+                                          </div>
+                                    </div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg1.jpg" alt=""></div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg2.jpg" alt=""></div>
+                                    <div class="brand_sp_bg"><img src="./images/ppbg3.jpg" alt=""></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!-- 品质进口 -->
       </main>
       <!--底部-->
-      <footer></footer>
+      <footer>
+            <div class="fotcon1 contaniner-md">
+                  <a href="#">
+                        <img src="./images/fotlog1.jpg" alt="">
+                        <b>正品保障</b>
+                        <span>正品行货 放心选购</span>
+                  </a>
+                  <a href="#">
+                        <img src="./images/fotlog2.jpg" alt="">
+                        <b>满86包邮</b>
+                        <span>满86元 免运费</span>
+                  </a>
+                  <a href="#">
+                        <img src="./images/fotlog3.jpg" alt="">
+                        <b>售后无忧</b>
+                        <span>7天无理由退货</span>
+                  </a>
+                  <a href="#">
+                        <img src="./images/fotlog4.jpg" alt="">
+                        <b>准时送达</b>
+                        <span>收货时间由你做主</span>
+                  </a>
+            </div>
+            <div class="fotcon2 contaniner-md">
+                  <div class="left_dl">
+                        <dl>
+                              <dt>新手入门</dt>
+                              <dd><a href="#">购物流程</a></dd>
+                              <dd><a href="#">会员制度</a></dd>
+                              <dd><a href="#">订单查询</a></dd>
+                              <dd><a href="#">服务协议及隐私说明</a></dd>
+                              <dd><a href="#">网站地图</a></dd>
+                        </dl>
+                        <dl>
+                              <dt>支付方式</dt>
+                              <dd><a href="#">货到付款</a></dd>
+                              <dd><a href="#">网上支付</a></dd>
+                              <dd><a href="#">礼品卡支付</a></dd>
+                              <dd><a href="#">其他支付</a></dd>
+                        </dl>
+                        <dl>
+                              <dt>配送服务</dt>
+                              <dd><a href="#">配送进度查询</a></dd>
+                              <dd><a href="#">商品验货与签收</a></dd>
+                        </dl>
+                        <dl>
+                              <dt>售后保障</dt>
+                              <dd><a href="#">退换货政策</a></dd>
+                              <dd><a href="#">发票制度</a></dd>
+                              <dd><a href="#">帮助中心</a></dd>
+                        </dl>
+                  </div>
+                  <div class="right_img">
+                        <div class="ewm">
+                              <p>APP更优惠</p>
+                              <a href="#">
+                                    <img src="./images/app.png" alt="APP更优惠二维码">
+                              </a>
+                        </div>
+                        <div class="ewm">
+                              <p>加微信查订单</p>
+                              <a href="#">
+                                    <img src="./images/vx.jpg" alt="加微信查订单二维码">
+                              </a>
+                        </div>
+                  </div>
+            </div>
+            <div class="fotcon3">
+                  <p class="ft_footer_link"></p>
+                  <p class="ft_footer_link">
+                        <a href="#">沪ICP备16050468号</a>|
+                        <a href="#">经营证照</a>|
+                        <a href="#">互联网药品信息服务资格证</a>|
+                        <a href="#">违法和不良信息举报电话：0527-88100253</a>|
+                        <a href="#">沪B2-20170039</a>|
+                        <a href="#">沪公网安备 31010502002939号</a>|
+                        <a href="#">友情链接</a>|
+                        <a href="#">出版物经营许可证</a>|
+                        <a href="#">增值电信业务经营许可证</a>
+                  </p>
+                  <p>Copyright© 1号店网上超市 2007-2018，All Rights Reserved</p>
+                  <p></p>
+                  <small class="ft_pic_link">
+                        <a href="#"><img src="./images/bt1.jpg" alt=""></a>
+                        <a href="#"><img src="./images/bt2.jpg" alt=""></a>
+                        <a href="#"><img src="./images/bt3.jpg" alt=""></a>
+                        <a href="#"><img src="./images/bt4.jpg" alt=""></a>
+                        <a href="#"><img src="./images/bt5.png" alt=""></a>
+                        <a href="#"><img src="./images/bt6.png" alt=""></a>
+                  </small>
+            </div>
+      </footer>
 </body>
 
 </html>
